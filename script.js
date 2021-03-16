@@ -12,10 +12,9 @@ $.ajax({
                 }
             }
             var math = parseInt(count);
-            document.write(math + " other people have your name! (In New York City)"); // Concatenation 
+            document.write(math + " other people have your name! (In New York City)" + "<br>"); // Concatenation 
         }
         everything();
-        
         
         //Extention: Asks user if they want a female baby name suggestion. Takes user input of yes or no and applies it.
         function extension(){
@@ -31,7 +30,7 @@ $.ajax({
                 // Randomly generates a name from the listed API due to the input of a number" from the user.
                 var oneName = data[Math.floor(Math.random() * userNum)];
                 console.log(oneName);
-                document.write("<br>" + oneName.nm + " is your recommended name!"); // Concatenation
+                document.write("<br> " + oneName.nm + " is your recommended name!"); // Concatenation
             }
         }
         extension();
